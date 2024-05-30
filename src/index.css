@@ -11,3 +11,49 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.to-do-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f8f8; 
+  height: 60px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+.to-do-list > span {
+  flex-grow: 2;
+  color: rgb(252, 124, 145);
+  text-align: center;
+  font-size: 35px; 
+  font-weight: bold;
+}
+
+.login-button, .logout-button {
+  margin-left: auto;
+  font-size: 16px; 
+  padding: 10px 20px; 
+  background-color: rgb(252, 124, 145); 
+  color: white;
+  border: none;
+  border-radius: 4px; 
+  cursor: pointer;
+}
+.logout-button{
+  background: white;
+  color: rgb(252, 124, 145);
+  font-weight: bold;
+  border-color: rgb(252, 124, 145);
+  border-radius: 8px;
+  border: 2px solid;
+}
+@media (max-width: 768px) {
+  .to-do-list > span {
+    font-size: 20px; 
+  }
+  .login-button,.logout-button {
+    font-size: 14px; 
+    padding: 8px 16px; 
+  }
+}
+
+
